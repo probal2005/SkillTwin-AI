@@ -1,0 +1,157 @@
+{
+  "next_sequence": 3,
+  "profiles": [
+    {
+      "id": "profile-1",
+      "skilltwin_id": "ST0001PDHAI",
+      "name": "PROBAL DHALI",
+      "education": "EDUCATION",
+      "experience": [],
+      "projects": [],
+      "certifications": [],
+      "target_role": "",
+      "skills": [
+        {
+          "id": "python",
+          "name": "Python",
+          "category": "Language",
+          "proficiency": "Beginner",
+          "evidence": "Detected from resume text: python"
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "category": "Language",
+          "proficiency": "Intermediate",
+          "evidence": "Detected from resume text: javascript"
+        },
+        {
+          "id": "java",
+          "name": "Java",
+          "category": "Language",
+          "proficiency": "Intermediate",
+          "evidence": "Detected from resume text: java"
+        },
+        {
+          "id": "cpp",
+          "name": "C++",
+          "category": "Language",
+          "proficiency": "Beginner",
+          "evidence": "Detected from resume text: c++"
+        },
+        {
+          "id": "git",
+          "name": "Git",
+          "category": "Tool",
+          "proficiency": "Beginner",
+          "evidence": "Detected from resume text: github"
+        },
+        {
+          "id": "react",
+          "name": "React",
+          "category": "Framework",
+          "proficiency": "Beginner",
+          "evidence": "Detected from resume text: react"
+        },
+        {
+          "id": "nodejs",
+          "name": "Node.js",
+          "category": "Framework",
+          "proficiency": "Beginner",
+          "evidence": "Detected from resume text: node.js"
+        },
+        {
+          "id": "machine_learning",
+          "name": "Machine Learning",
+          "category": "Domain",
+          "proficiency": "Beginner",
+          "evidence": "Detected from resume text: machine learning"
+        },
+        {
+          "id": "deep_learning",
+          "name": "Deep Learning",
+          "category": "Domain",
+          "proficiency": "Beginner",
+          "evidence": "Detected from resume text: deep learning"
+        },
+        {
+          "id": "data_analysis",
+          "name": "Data Analysis",
+          "category": "Domain",
+          "proficiency": "Beginner",
+          "evidence": "Detected from resume text: data analysis"
+        },
+        {
+          "id": "statistics",
+          "name": "Statistics",
+          "category": "Domain",
+          "proficiency": "Beginner",
+          "evidence": "Detected from resume text: statistics"
+        }
+      ],
+      "resume_hash": "0463484d693a59f9d417a18b389036495791cc8b472ed39ca3e7801e6f201e0b"
+    },
+    {
+      "id": "profile-2",
+      "skilltwin_id": "ST0002EEDAI",
+      "name": "EDUCATION",
+      "education": "EDUCATION",
+      "experience": [],
+      "projects": [],
+      "certifications": [],
+      "target_role": "",
+      "skills": [
+        {
+          "id": "python",
+          "name": "Python",
+          "category": "Language",
+          "proficiency": "Beginner",
+          "evidence": "Detected from resume text: python"
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript",
+          "category": "Language",
+          "proficiency": "Advanced",
+          "evidence": "Detected from resume text: javascript"
+        },
+        {
+          "id": "git",
+          "name": "Git",
+          "category": "Tool",
+          "proficiency": "Beginner",
+          "evidence": "Detected from resume text: git"
+        },
+        {
+          "id": "react",
+          "name": "React",
+          "category": "Framework",
+          "proficiency": "Beginner",
+          "evidence": "Detected from resume text: react"
+        },
+        {
+          "id": "machine_learning",
+          "name": "Machine Learning",
+          "category": "Domain",
+          "proficiency": "Beginner",
+          "evidence": "Detected from resume text: machine learning"
+        },
+        {
+          "id": "data_analysis",
+          "name": "Data Analysis",
+          "category": "Domain",
+          "proficiency": "Beginner",
+          "evidence": "Detected from resume text: data analysis"
+        },
+        {
+          "id": "statistics",
+          "name": "Statistics",
+          "category": "Domain",
+          "proficiency": "Beginner",
+          "evidence": "Detected from resume text: statistics"
+        }
+      ],
+      "resume_hash": "01103367f5855824b348dfbde3e5e9de37a10bdd01574dee352cfc0a7f6a4b21"
+    }
+  ]
+}
