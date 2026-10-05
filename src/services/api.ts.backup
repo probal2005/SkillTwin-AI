@@ -1,0 +1,73 @@
+import type { Roadmap, SimulationState, SkillTwin, UserProfile } from '@/types';
+import { demoUser } from '@/data/users';
+import { getRoadmap } from '@/data/roadmaps';
+import { buildSkillTwin } from './skillEngine';
+import { calculateMatchScore, calculatePriority, calculateSkillGap } from './scoring';
+import { simulateSkills } from './simulation';
+
+// ──────────────────────────────────────────────
+// Mock API service layer
+// These functions simulate backend calls using local data.
+// Future FastAPI endpoints will replace these implementations.
+// ──────────────────────────────────────────────
+
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
+// POST /api/upload-resume
+export async function uploadResume(file: File): Promise<{ fileName: string; fileSize: number }> {
+  await delay(500);
+  return { fileName: file.name, fileSize: file.size };
+}
+
+// POST /api/extract-skills
+export async function extractSkills(_file: File): Promise<UserProfile> {
+  // Future: FastAPI endpoint will call NLP model to extract skills from resume
+  await delay(2000);
+  return { ...demoUser };
+}
+
+// GET /api/skill-twin/:userId
+export async function getSkillTwin(userId: string): Promise<SkillTwin> {
+  // Future: GET from FastAPI
+  await delay(300);
+  return buildSkillTwin({ ...demoUser, id: userId });
+}
+
+// GET /api/role-demand/:roleId
+export async function getRoleDemand(roleId: string) {
+  // Future: GET from FastAPI
+  await delay(300);
+  const gaps = calculateSkillGap(demoUser, roleId);
+  const score = calculateMatchScore(demoUser, roleId);
+  const priority = calculatePriority(demoUser, roleId);
+  return { gaps, score, priority };
+}
+
+// POST /api/analyze-skill-gap
+export async function analyzeSkillGap(user: UserProfile, roleId: string) {
+  // Future: POST to FastAPI
+  await delay(300);
+  return {
+    gaps: calculateSkillGap(user, roleId),
+    score: calculateMatchScore(user, roleId),
+    priority: calculatePriority(user, roleId),
+  };
+}
+
+// POST /api/simulate
+export async function calculateSimulation(
+  user: UserProfile,
+  roleId: string,
+  selectedSkillIds: string[],
+): Promise<SimulationState> {
+  // Future: POST to FastAPI
+  await delay(200);
+  return simulateSkills(user, roleId, selectedSkillIds);
+}
+
+// GET /api/roadmap/:roleId
+export async function generateRoadmap(roleId: string): Promise<Roadmap | undefined> {
+  // Future: GET from FastAPI
+  await delay(300);
+  return getRoadmap(roleId);
+}
